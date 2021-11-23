@@ -18,6 +18,9 @@ fig = plt.figure()
 
 st.title('Concrete Classifier using image processing')
 
+with open("customs.css") as f:
+    st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+
    
 def main():
     file_uploaded = st.file_uploader("Choose File", type=["png","jpg","jpeg"])
